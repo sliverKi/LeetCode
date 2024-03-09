@@ -8,7 +8,6 @@ class Solution:
         #return : 앞에서 부터 k번째 <-> 뒤에서 k번째 swap
         temp = head
         stack=[]
-        
         length = 0
         if not head: return 
         while temp:
@@ -16,13 +15,10 @@ class Solution:
             temp=temp.next
             length += 1
         
-        kth_from_start = stack[k-1]
-        kth_from_end = stack[length-k]
-        
+        start = stack[k-1]
+        end = stack[length-k]
        
-        kth_from_start.val, kth_from_end.val = kth_from_end.val, kth_from_start.val
-        
-       
+        start.val, end.val = end.val, start.val
         return head
         
        
