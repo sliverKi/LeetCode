@@ -9,7 +9,6 @@ class Solution:
         dummy=[]
         length = 0
         
-        
         while cur:
             length+=1
             cur = cur.next
