@@ -16,7 +16,7 @@ class Solution:
         reverse = node.next
         tail = reverse.next#swap
         
-        # Reverse the sublist from left to right
+        
         for _ in range(right - left):
             reverse.next = tail.next
             tail.next = node.next
